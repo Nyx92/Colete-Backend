@@ -1,6 +1,6 @@
 export default function initUserModel(sequelize, DataTypes) {
   return sequelize.define(
-    "user",
+    'user',
     {
       id: {
         allowNull: false,
@@ -14,21 +14,16 @@ export default function initUserModel(sequelize, DataTypes) {
       lastName: {
         type: DataTypes.STRING,
       },
-      email: {
-        type: DataTypes.STRING,
-      },
-      username: {
-        type: DataTypes.STRING,
-      },
-      password: {
-        type: DataTypes.STRING,
-      },
       address: {
-        allowNull: true,
         type: DataTypes.STRING,
       },
       phone: {
-        allowNull: true,
+        type: Sequelize.STRING,
+      },
+      email: {
+        type: DataTypes.STRING,
+      },
+      password: {
         type: DataTypes.STRING,
       },
       createdAt: {
